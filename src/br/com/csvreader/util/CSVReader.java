@@ -22,7 +22,7 @@ public class CSVReader {
 		    String line;
 		    
 		    while ((line = br.readLine()) != null) {
-		        String[] values = line.split(",");
+		        String[] values = line.split(";");
 		        records.add(Arrays.asList(values));
 		    }
 		} catch (IOException e) {
